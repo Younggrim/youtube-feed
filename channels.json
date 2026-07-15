@@ -1,0 +1,19 @@
+{
+  "tabs": [
+    {
+      "label": "Steelers",
+      "channels": [
+        {
+          "name": "All Steelers Talk",
+          "url": "https://www.youtube.com/@AllSteelersTalk",
+          "channel_id": "UCtXkDMZuH7zvuNpy6RDfR9A"
+        },
+        {
+          "name": "Deke",
+          "url": "https://www.youtube.com/@Deke",
+          "channel_id": "UCYp0HpA56dcoWAU3QiwFz2A"
+        }
+      ]
+    }
+  ]
+}
