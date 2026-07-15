@@ -366,6 +366,11 @@ def main():
     output_path.write_text(html)
     print(f"Output written to: {output_path}")
 
+    # Write CNAME file for custom domain
+    cname_path = output_path.parent / "CNAME"
+    cname_path.write_text("feed.macdwellings.com\n")
+    print(f"CNAME written to: {cname_path}")
+
 
 if __name__ == "__main__":
     main()
