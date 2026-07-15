@@ -1,6 +1,12 @@
 {
   "tabs": [
     {
+      "label": "Church",
+      "channels": [
+        {"name": "New River Church", "url": "https://www.youtube.com/@newriver.church"}
+      ]
+    },
+    {
       "label": "Faith",
       "channels": [
         {"name": "A Nickelsworth Bible Reviews", "url": "https://www.youtube.com/@anickelsworthbiblereviews"},
@@ -20,7 +26,6 @@
         {"name": "Nick V Ministries", "url": "https://www.youtube.com/@NickVMinistries"},
         {"name": "Watch Wonder Project", "url": "https://www.youtube.com/@watchwonderproject"},
         {"name": "AUBTL", "url": "https://www.youtube.com/@aubtl"},
-        {"name": "Phil Robertson", "url": "https://www.youtube.com/@PhilRobertsononBlazeTV"},
         {"name": "Lakepointe Church", "url": "https://www.youtube.com/@LakepointeChurch"},
         {"name": "The Bible Recap", "url": "https://www.youtube.com/@TheBibleRecap"},
         {"name": "QC Socials", "url": "https://www.youtube.com/@qcsocials"},
@@ -71,13 +76,6 @@
       ]
     },
     {
-      "label": "Charlotte FC",
-      "channels": [
-        {"name": "Soccer City CLT", "url": "https://www.youtube.com/@soccercityclt"},
-        {"name": "Charlotte FC", "url": "https://www.youtube.com/@Charlotte.F.C"}
-      ]
-    },
-    {
       "label": "Technology",
       "channels": [
         {"name": "NetworkChuck", "url": "https://www.youtube.com/@NetworkChuck"},
@@ -90,7 +88,6 @@
       "label": "Guns",
       "channels": [
         {"name": "Honest Outlaw", "url": "https://www.youtube.com/@HonestOutlawReviews"},
-        {"name": "Tim Wildsmith", "url": "https://www.youtube.com/@timwildsmith"},
         {"name": "Yee Yee Life", "url": "https://www.youtube.com/@YeeYeeLife"},
         {"name": "Gun Bros", "url": "https://www.youtube.com/@gunbros"},
         {"name": "Johnny Q", "url": "https://www.youtube.com/@JohnnyQ"},
@@ -101,7 +98,8 @@
       "label": "Podcasts",
       "channels": [
         {"name": "Men at the Movies", "url": "https://www.youtube.com/@menatthemovies"},
-        {"name": "God's Glory in Men's Real Stories", "url": "https://www.youtube.com/@godsgloryinmensrealstories"}
+        {"name": "God's Glory in Men's Real Stories", "url": "https://www.youtube.com/@godsgloryinmensrealstories"},
+        {"name": "Phil Robertson", "url": "https://www.youtube.com/@PhilRobertsononBlazeTV"}
       ]
     },
     {
@@ -111,9 +109,10 @@
       ]
     },
     {
-      "label": "Church",
+      "label": "Charlotte FC",
       "channels": [
-        {"name": "New River Church", "url": "https://www.youtube.com/@newriver.church"}
+        {"name": "Soccer City CLT", "url": "https://www.youtube.com/@soccercityclt"},
+        {"name": "Charlotte FC", "url": "https://www.youtube.com/@Charlotte.F.C"}
       ]
     }
   ]
