@@ -1,13 +1,120 @@
 {
   "tabs": [
     {
+      "label": "Faith",
+      "channels": [
+        {"name": "A Nickelsworth Bible Reviews", "url": "https://www.youtube.com/@anickelsworthbiblereviews"},
+        {"name": "Bible Project", "url": "https://www.youtube.com/@bibleproject"},
+        {"name": "Impact Video Ministries", "url": "https://www.youtube.com/@ImpactVideoMinistries"},
+        {"name": "Bible Memory Goal", "url": "https://www.youtube.com/@BibleMemoryGoal"},
+        {"name": "A Frisch Perspective", "url": "https://www.youtube.com/@AFrischPerspective"},
+        {"name": "Disciple Dojo", "url": "https://www.youtube.com/@DiscipleDojo"},
+        {"name": "Bible Buying Guide", "url": "https://www.youtube.com/@BibleBuyingGuide"},
+        {"name": "Jacob Giron", "url": "https://www.youtube.com/@jacobgironn"},
+        {"name": "Rabbi Jason Sobel", "url": "https://www.youtube.com/@RabbiJasonSobel"},
+        {"name": "The Chosen Series", "url": "https://www.youtube.com/@TheChosenSeries"},
+        {"name": "Daily Dose Of Wisdom", "url": "https://www.youtube.com/@Daily_Dose_Of_Wisdom"},
+        {"name": "I Am Second", "url": "https://www.youtube.com/@IAm2nd"},
+        {"name": "Faith Talks", "url": "https://www.youtube.com/@FaithTalks"},
+        {"name": "The Beat AGP", "url": "https://www.youtube.com/@thebeatagp"},
+        {"name": "Nick V Ministries", "url": "https://www.youtube.com/@NickVMinistries"},
+        {"name": "Watch Wonder Project", "url": "https://www.youtube.com/@watchwonderproject"},
+        {"name": "Narroway Homestead", "url": "https://www.youtube.com/@Narrowayhomestead"},
+        {"name": "AUBTL", "url": "https://www.youtube.com/@aubtl"},
+        {"name": "Phil Robertson", "url": "https://www.youtube.com/@PhilRobertsononBlazeTV"},
+        {"name": "Lakepointe Church", "url": "https://www.youtube.com/@LakepointeChurch"},
+        {"name": "The Bible Recap", "url": "https://www.youtube.com/@TheBibleRecap"},
+        {"name": "QC Socials", "url": "https://www.youtube.com/@qcsocials"},
+        {"name": "Tim Wildsmith", "url": "https://www.youtube.com/@timwildsmith"},
+        {"name": "David Guzik Enduring Word", "url": "https://www.youtube.com/@DavidGuzikEnduringWord"},
+        {"name": "Brandon Robbins Ministry", "url": "https://www.youtube.com/@BrandonRobbinsMinistry"},
+        {"name": "Grace to You", "url": "https://www.youtube.com/@gracetoyou"},
+        {"name": "Faith J Womack", "url": "https://www.youtube.com/@FaithJWomack"},
+        {"name": "Nicholas Bowling", "url": "https://www.youtube.com/@NicholasBowling"}
+      ]
+    },
+    {
       "label": "Steelers",
       "channels": [
-        {
-          "name": "All Steelers Talk",
-          "url": "https://www.youtube.com/@AllSteelersTalk",
-          "channel_id": "UCtXkDMZuH7zvuNpy6RDfR9A"
-        }
+        {"name": "All Steelers Talk", "url": "https://www.youtube.com/@AllSteelersTalk", "channel_id": "UCtXkDMZuH7zvuNpy6RDfR9A"},
+        {"name": "Deke", "url": "https://www.youtube.com/@Deke"},
+        {"name": "Pittsburgh Steelers", "url": "https://www.youtube.com/@steelers"}
+      ]
+    },
+    {
+      "label": "Privacy and Security",
+      "channels": [
+        {"name": "All Things Secured", "url": "https://www.youtube.com/@AllThingsSecured"},
+        {"name": "Surveillance Report", "url": "https://www.youtube.com/@surveillancereport"},
+        {"name": "Naomi Brockwell", "url": "https://www.youtube.com/@NaomiBrockwellTV"},
+        {"name": "Privacy Guides", "url": "https://www.youtube.com/@PrivacyGuides"},
+        {"name": "Techlore", "url": "https://www.youtube.com/@techlore"},
+        {"name": "Proton AG", "url": "https://www.youtube.com/@ProtonAG"},
+        {"name": "The Secure Dad", "url": "https://www.youtube.com/@TheSecureDad"},
+        {"name": "Proton Privacy", "url": "https://www.youtube.com/@ProtonPrivacy"}
+      ]
+    },
+    {
+      "label": "Social",
+      "channels": [
+        {"name": "Will Survives", "url": "https://www.youtube.com/@willsurvives"},
+        {"name": "Outdoor Boys", "url": "https://www.youtube.com/@OutdoorBoys"},
+        {"name": "Cowboy Kent Rollins", "url": "https://www.youtube.com/@CowboyKentRollins"},
+        {"name": "A Lost Rich", "url": "https://www.youtube.com/@alostrich"},
+        {"name": "Kendall Gray", "url": "https://www.youtube.com/@KendallGray1"},
+        {"name": "Kendall Gray Vlogs", "url": "https://www.youtube.com/@KendallGrayVlogs"},
+        {"name": "Woodsbound Outdoors", "url": "https://www.youtube.com/@WoodsboundOutdoors"},
+        {"name": "Pittsburgh Dad", "url": "https://www.youtube.com/@pittsburghdad"},
+        {"name": "Forrest Galante", "url": "https://www.youtube.com/@ForrestGalante"},
+        {"name": "Makeshift Project", "url": "https://www.youtube.com/@Makeshift_Project"},
+        {"name": "Narroway Homestead", "url": "https://www.youtube.com/@Narrowayhomestead"},
+        {"name": "First We Feast", "url": "https://www.youtube.com/@FirstWeFeast"}
+      ]
+    },
+    {
+      "label": "Charlotte FC",
+      "channels": [
+        {"name": "Soccer City CLT", "url": "https://www.youtube.com/@soccercityclt"},
+        {"name": "Charlotte FC", "url": "https://www.youtube.com/@Charlotte.F.C"}
+      ]
+    },
+    {
+      "label": "Technology",
+      "channels": [
+        {"name": "NetworkChuck", "url": "https://www.youtube.com/@NetworkChuck"},
+        {"name": "Beard FM", "url": "https://www.youtube.com/@beardfm"},
+        {"name": "Switched to Linux", "url": "https://www.youtube.com/@SwitchedtoLinux"},
+        {"name": "Linus Tech Tips", "url": "https://www.youtube.com/@LinusTechTips"}
+      ]
+    },
+    {
+      "label": "Guns",
+      "channels": [
+        {"name": "Honest Outlaw", "url": "https://www.youtube.com/@HonestOutlawReviews"},
+        {"name": "Tim Wildsmith", "url": "https://www.youtube.com/@timwildsmith"},
+        {"name": "Yee Yee Life", "url": "https://www.youtube.com/@YeeYeeLife"},
+        {"name": "Gun Bros", "url": "https://www.youtube.com/@gunbros"},
+        {"name": "Johnny Q", "url": "https://www.youtube.com/@JohnnyQ"},
+        {"name": "Civilian Tactical", "url": "https://www.youtube.com/@CivilianTactical"}
+      ]
+    },
+    {
+      "label": "Podcasts",
+      "channels": [
+        {"name": "Men at the Movies", "url": "https://www.youtube.com/@menatthemovies"},
+        {"name": "God's Glory in Men's Real Stories", "url": "https://www.youtube.com/@godsgloryinmensrealstories"}
+      ]
+    },
+    {
+      "label": "Productivity",
+      "channels": [
+        {"name": "Redeeming Productivity", "url": "https://www.youtube.com/@redeemingproductivity"}
+      ]
+    },
+    {
+      "label": "Church",
+      "channels": [
+        {"name": "New River Church", "url": "https://www.youtube.com/@newriver.church"}
       ]
     }
   ]

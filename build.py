@@ -9,7 +9,7 @@ import re
 import ssl
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # Create an SSL context - handle macOS cert issues gracefully
@@ -94,7 +94,7 @@ def fetch_rss_feed(channel_id: str) -> list[dict]:
         try:
             pub_date = datetime.fromisoformat(published.replace("Z", "+00:00"))
         except (ValueError, AttributeError):
-            pub_date = datetime.min
+            pub_date = datetime.min.replace(tzinfo=timezone.utc)
 
         videos.append({
             "video_id": video_id,
@@ -112,6 +112,9 @@ def fetch_rss_feed(channel_id: str) -> list[dict]:
 def generate_html(tabs_data: list[dict]) -> str:
     """Generate the full HTML page with tabs and embedded videos."""
 
+    # Filter: only videos from the last 2 weeks
+    two_weeks_ago = datetime.now(timezone.utc) - timedelta(days=14)
+
     # Build tab buttons
     tab_buttons = ""
     tab_contents = ""
@@ -120,10 +123,14 @@ def generate_html(tabs_data: list[dict]) -> str:
         active_class = " active" if i == 0 else ""
         tab_buttons += f'    <button class="tab-btn{active_class}" data-tab="tab-{i}">{tab["label"]}</button>\n'
 
-        # Sort all videos by date (newest first)
+        # Collect videos, limit 5 per channel, filter by age
         all_videos = []
         for channel in tab["channels"]:
-            all_videos.extend(channel["videos"])
+            recent = [
+                v for v in channel["videos"]
+                if v["pub_date"] > two_weeks_ago
+            ]
+            all_videos.extend(recent[:5])
         all_videos.sort(key=lambda v: v["pub_date"], reverse=True)
 
         # Build video cards
