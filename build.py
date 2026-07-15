@@ -146,14 +146,11 @@ def generate_html(tabs_data: list[dict]) -> str:
 
             video_cards += f"""
       <div class="video-card">
-        <div class="video-embed">
-          <iframe
-            src="https://www.youtube.com/embed/{video['video_id']}"
-            title="{video['title'].replace('"', '&quot;')}"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+        <div class="video-embed" data-id="{video['video_id']}">
+          <img src="https://i.ytimg.com/vi/{video['video_id']}/hqdefault.jpg"
+               alt="{video['title'].replace('"', '&quot;')}"
+               loading="lazy">
+          <button class="play-btn" aria-label="Play video">&#9654;</button>
         </div>
         <div class="video-info">
           <h3>{video['title']}</h3>
@@ -254,6 +251,37 @@ def generate_html(tabs_data: list[dict]) -> str:
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
+      cursor: pointer;
+      background: #000;
+    }}
+
+    .video-embed img {{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }}
+
+    .video-embed .play-btn {{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }}
+
+    .video-embed .play-btn:hover {{
+      background: rgba(255, 0, 0, 0.9);
     }}
 
     .video-embed iframe {{
@@ -313,12 +341,21 @@ def generate_html(tabs_data: list[dict]) -> str:
 {tab_contents}  </main>
 
   <script>
+    // Tab switching
     document.querySelectorAll('.tab-btn').forEach(btn => {{
       btn.addEventListener('click', () => {{
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
         document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
         btn.classList.add('active');
         document.getElementById(btn.dataset.tab).style.display = 'grid';
+      }});
+    }});
+
+    // Click-to-play: replace thumbnail with iframe on click
+    document.querySelectorAll('.video-embed[data-id]').forEach(embed => {{
+      embed.addEventListener('click', () => {{
+        const id = embed.dataset.id;
+        embed.innerHTML = `<iframe src="https://www.youtube.com/embed/${{id}}?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       }});
     }});
   </script>
