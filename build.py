@@ -355,7 +355,7 @@ def generate_html(tabs_data: list[dict]) -> str:
     document.querySelectorAll('.video-embed[data-id]').forEach(embed => {{
       embed.addEventListener('click', () => {{
         const id = embed.dataset.id;
-        embed.innerHTML = `<iframe src="https://www.youtube.com/embed/${{id}}?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        embed.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${{id}}?autoplay=1" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       }});
     }});
   </script>
